@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet"
+        href="style.css">
+  <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+  <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap"
+        rel="stylesheet">
+  <title>Бинарный поиск (binary-search)</title>
+</head>
+
+<body>
+  <div class="root">
+    <a href="../../index.html"
+       class="link">Вернуться на главную страницу</a>
+    <h1 class="title">Бинарный поиск (binary-search)</h1>
+    <table class="table">
+      <caption class="table__caption">
+        степени двойки
+      </caption>
+      <tr class="table__tr">
+        <th class="table__th">до 10</th>
+        <th class="table__th">до 20</th>
+        <th class="table__th">до 30</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^1 = 2</th>
+        <th class="table__th">2^11 = 2048</th>
+        <th class="table__th">2^21 = 2097152</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^2 = 4</th>
+        <th class="table__th">2^12 = 4096</th>
+        <th class="table__th">2^22 = 4194304</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^3 = 8</th>
+        <th class="table__th">2^13 = 8192</th>
+        <th class="table__th">2^23 = 8388608</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^4 = 16</th>
+        <th class="table__th">2^14 = 16384</th>
+        <th class="table__th">2^24 = 16777216</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^5 = 32</th>
+        <th class="table__th">2^15 = 32768</th>
+        <th class="table__th">2^25 = 33554432</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^6 = 64</th>
+        <th class="table__th">2^16 = 65536</th>
+        <th class="table__th">2^26 = 67108864</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^7 = 128</th>
+        <th class="table__th">2^17 = 131072</th>
+        <th class="table__th">2^27 = 134217728</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^8 = 256</th>
+        <th class="table__th">2^18 = 262144</th>
+        <th class="table__th">2^28 = 268435456</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^9 = 512</th>
+        <th class="table__th">2^19 = 524288</th>
+        <th class="table__th">2^29 = 536870912</th>
+      </tr>
+      <tr class="table__tr">
+        <th class="table__th">2^10 = 1024</th>
+        <th class="table__th">2^20 = 1048576</th>
+        <th class="table__th">2^30 = 1073741824</th>
+      </tr>
+    </table>
+
+    <form class="form">
+      <h2 class="subtitle">Пожалуйста, введите число, которое будет последним элементом простого массива</h2>
+      <!-- <p class=".error-message"></p> -->
+      <input type="number"
+             class="form__input">
+
+      <button class="form__button">Сгенерировать массив</button>
+
+    </form>
+    <p>Вот он</p>
+    <p class="result"></p>
+  </div>
+  <script src="index.js"></script>
+
+</body>
+
+</html>

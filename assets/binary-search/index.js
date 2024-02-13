@@ -1,7 +1,7 @@
 const arr = [];
 
 const generationArray = (number) => {
-  for (let i = 1; i <= number; i++) {
+  for (let i = 0; i <= number; i++) {
     arr.push(i);
   }
 };
@@ -44,7 +44,7 @@ const generationArray = (number) => {
 //   result.innerHTML = arr;
 //   console.log(arr);
 // });
-generationArray(10);
+generationArray(100);
 console.log(arr);
 const binarySearch = (arr, value) => {
   let low = 0;
@@ -66,4 +66,6 @@ const binarySearch = (arr, value) => {
   return `нет такого числа`;
 };
 
-console.log(binarySearch(arr, 8));
+console.log(binarySearch(arr, 0));
+
+//TODO: хочу доделать ввод пользователем минимального и максимального значения массива, шаг массива, массив из букв (слов), что бы верстка не дергалась. Добавить время за какое прошел поиск и количество операции. + можно предсказывать сколько будет операции в зависимости от количества элементов массива. Можно подсвечивать в прямо в таблице со степенями двойки
